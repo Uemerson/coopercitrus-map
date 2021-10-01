@@ -1,0 +1,88 @@
+/* nice example: https://www.codeply.com/go/ioPsDfyCBc */
+
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css';
+
+
+html,
+body {
+  background-color: #fff;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+}
+
+.there-we-are {
+  color: #1a472b;
+  font-weight: 700;
+  font-size: 34px;
+}
+
+div#map {
+  height: 500px;
+}
+
+.container-map {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  background-color: #FFF;
+  width: 70%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+}
+
+.container-branch {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.container-input {
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  flex:1;
+}
+
+.find-branch {
+  color: #7a7a7a;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  outline: 0 !important;
+  border-color: initial;
+  box-shadow: none;
+  background: #efe9e5;
+}
+
+.form-control {
+  background: #efe9e5;
+}
+
+@media screen and (max-width: 1040px) {
+  .overlay {
+    width: 95%;
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .overlay {
+    height: 80px;
+  }
+
+  .container-branch{
+    width: 40%;
+  }
+}
