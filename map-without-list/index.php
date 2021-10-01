@@ -47,6 +47,7 @@
                             lng: -50.8804391
                         },
                         zoom: 5.5,
+                        disableDefaultUI: true,
                     });
 
                     await fetchData('');
